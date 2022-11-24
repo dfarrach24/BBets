@@ -116,7 +116,58 @@ hist(varstore)
 print(mean(varstore))
 ```
 
+
+
 From the histogram its apparent for the 2:1 odds to be fair we need about 29 people in the class. If there are more than 29 people Dr. Brownlow is taking advantage of his students. 
+
+
+
+```{r}
+numClass=35
+odds=3
+countoDo=50
+varstore=numeric()
+for(i in 1:637){
+brownlow <-BrLw(numClass,odds,countoDo)
+varstore[i]=brownlow}
+```
+
+```{r}
+hist(varstore)
+print(mean(varstore))
+```
+
+
+
+```{r}
+numClass=35
+odds=4
+countoDo=50
+varstore=numeric()
+for(i in 1:637){
+brownlow <-BrLw(numClass,odds,countoDo)
+varstore[i]=brownlow}
+```
+
+```{r}
+hist(varstore)
+print(mean(varstore))
+```
+
+```{r}
+numClass=35
+odds=4.50
+countoDo=50
+varstore=numeric()
+for(i in 1:637){
+brownlow <-BrLw(numClass,odds,countoDo)
+varstore[i]=brownlow}
+```
+
+```{r}
+hist(varstore)
+print(mean(varstore))
+```
 
 
 
@@ -124,3 +175,4 @@ From the histogram its apparent for the 2:1 odds to be fair we need about 29 peo
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+For the class size of 35 students for the 2 to 1 odd average Dr.Brownlow makes around $22. The class size that makes the payout fair is about 29. The fair odds for a bet on matching birthdays in a class of 35 students the fair payout is 4.50
